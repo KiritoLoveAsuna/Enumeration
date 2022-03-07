@@ -1,0 +1,26 @@
+目录遍历信息搜集
+site: xxxx intitle:index.of
+
+配置文件泄露
+site:xxxx ext:xml | ext:conf | ext:cnf | ext:reg | ext:inf | ext:rdp | ext:cfg | ext:txt | ext:ora | ext:ini
+
+数据库文件泄露
+site:xxxxx ext:sql | ext:dbf | ext:mdb | ext:db
+
+日志文件泄露
+site:github.com ext:log
+
+备份和历史文件
+site:github.com ext:bkf | ext:bkp | ext:bak | ext:old | ext:backup
+
+登录页面
+site:github.com inurl:login | inurl:admin | intitle:登陆 | intitle:后台 | intitle:管理 | intitle:认证
+
+SQL错误
+site:github.com intext:"sql syntax near" | intext:"syntax error has occurred" | intext:"incorrect syntax near" | intext:"unexpected end of SQL command" | intext:"Warning: mysql_connect()" | intext:"Warning: mysql_query()" | intext:"Warning: pg_connect()"
+
+公开文件信息
+site:github.com ext:doc | ext:docx | ext:odt | ext:pdf | ext:rtf | ext:sxw | ext:psw | ext:ppt | ext:pptx | ext:pps | ext:csv
+
+phpinfo()
+site:github.com ext:php intitle:phpinfo "published by the PHP Group"
